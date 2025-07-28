@@ -11,6 +11,7 @@ struct itemStruct: Identifiable{
  var item:String
 }
 
+
 struct TodoApp: View {
     @State var item: String = ""
     @State var items: [itemStruct] = []
@@ -26,6 +27,7 @@ struct TodoApp: View {
                 .padding(.horizontal)
                 .border(Color.gray, width: 2)
                 .padding(.horizontal , 8)
+                
                 
                 Button("Add"){
                    addNameFunction()
